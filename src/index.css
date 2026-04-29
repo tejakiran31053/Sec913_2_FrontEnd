@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-dark: rgb(51, 51, 51);
+  --primary-blue: #1b9c01;
+  --primary-green: #438B2A;
+  --text-gray: #565656;
+  --accent-gray: #9AB2BB;
+  --background: #FEFEFE;
+  --border-gray: #ccc;
+}
+html, body, #root{ 
+  margin:0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10pt;
+}
+:focus{
+  outline: 1px solid var(--secondary-color);
+}
