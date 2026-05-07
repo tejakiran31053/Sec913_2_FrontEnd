@@ -100,3 +100,319 @@
     font-size: 8pt;
     text-align: center;
 }
+
+/* ===================== DASHBOARD ===================== */
+.dashboard-app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+/* Top Header */
+.dash-header {
+    width: 100%;
+    height: 52px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.dash-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dash-logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.dash-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-title {
+    font-size: 13pt;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.logo-sub {
+    font-size: 8pt;
+    color: var(--primary-green, #4caf50);
+    font-weight: 500;
+    text-align: center;
+}
+
+.dash-user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dash-username {
+    font-size: 11pt;
+    color: #333;
+    font-weight: 500;
+}
+
+.dash-user-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 14pt;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.dash-user-btn:hover {
+    opacity: 0.85;
+}
+
+/* Body */
+.dash-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.dash-sidebar {
+    width: 140px;
+    background: var(--primary-blue);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.dash-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    font-size: 10pt;
+    transition: background 0.15s;
+    border-left: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.dash-nav-item:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+.dash-nav-item.active {
+    background: rgba(255,255,255,0.2);
+    border-left: 3px solid white;
+    font-weight: 600;
+}
+
+.dash-nav-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.nav-icon-placeholder {
+    width: 20px;
+    text-align: center;
+    font-size: 14pt;
+    color: rgba(255,255,255,0.6);
+}
+
+.nav-icon-badge {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Main Area */
+.dash-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    overflow-y: auto;
+}
+
+.dash-content-area {
+    flex: 1;
+    padding: 16px 20px;
+}
+
+.dash-placeholder {
+    font-size: 11pt;
+    color: #555;
+    margin: 0;
+}
+
+/* Footer */
+.dash-footer {
+    text-align: center;
+    font-size: 8.5pt;
+    color: #777;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: white;
+}
+
+/* ===================== ROLES PAGE ===================== */
+.roles-page {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.section-label {
+    font-size: 9pt;
+    color: #555;
+    margin: 10px 0 4px 0;
+}
+
+.roles-section {
+    border: 2px solid #3333cc;
+    border-radius: 4px;
+    padding: 16px 20px;
+    background: white;
+    margin-bottom: 4px;
+}
+
+.roles-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.roles-field-label {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #222;
+    min-width: 50px;
+}
+
+.roles-input {
+    flex: 1;
+    max-width: 260px;
+    height: 32px;
+    border: 2px solid #222;
+    border-radius: 4px;
+    padding: 0 8px;
+    font-size: 10pt;
+    outline: none;
+}
+
+.roles-input:focus {
+    border-color: #3333cc;
+}
+
+.roles-btn {
+    height: 32px;
+    padding: 0 18px;
+    background: #b0b0b0;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    font-size: 10pt;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.roles-btn:hover {
+    background: #999;
+}
+
+/* Map Menu Section */
+.map-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.map-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 180px;
+}
+
+.map-title {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #3333cc;
+    margin: 0;
+}
+
+.roles-select {
+    height: 34px;
+    min-width: 160px;
+    border: 2px solid #3333cc;
+    border-radius: 4px;
+    padding: 0 8px;
+    font-size: 10pt;
+    color: #333;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.map-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.map-checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10.5pt;
+    color: #222;
+    cursor: pointer;
+}
+
+.map-checkbox-row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.map-add-btn {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+
+

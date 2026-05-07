@@ -7,7 +7,7 @@ export function callApi(reqMethod, apiUrl, jsonData, formData, responseHandler, 
         headers["Content-Type"] = "application/json";
 
     if (jwtToken)
-        headers["Authorization"] = "Bearer ${jwtToken}";
+        headers["Token"] = jwtToken;
 
     const options = {
         method: reqMethod,
